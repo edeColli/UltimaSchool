@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Blog Template · Bootstrap v5.3</title>
+    <meta name="theme-color" content="#712cf9" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <header class="blog-header lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="link-secondary" href="#">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-body-emphasis" href="#">Large</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="link-secondary" href="#" aria-label="Search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mx-3"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <title>Search</title>
+                <circle cx="10.5" cy="10.5" r="7.5" />
+                <path d="M21 21l-5.2-5.2" />
+              </svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 link-secondary" href="#">Smartphones</a>
+          <a class="p-2 link-secondary" href="#">Consoles</a>
+          <a class="p-2 link-secondary" href="#">SmartTV</a>
+          <a class="p-2 link-secondary" href="#">Games</a>
+          <a class="p-2 link-secondary" href="#">Livros</a>
+          <a class="p-2 link-secondary" href="#">Ferramentas</a>
+          <a class="p-2 link-secondary" href="#">Acessórios</a>
+          <a class="p-2 link-secondary" href="#">Roupas</a>
+          <a class="p-2 link-secondary" href="#">Calçados</a>
+          <a class="p-2 link-secondary" href="#">Utilidades Domésticas</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3">
+            Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most
+            interesting in this post’s contents.
+          </p>
+          <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Smart Phones</strong>
+              <h3 class="mb-0">iPhone 14 Pro</h3>
+              <div class="mb-1 text-body-secondary">Abr 04</div>
+              <p class="card-text mb-auto">
+                O iPhone 14 Pro é o modelo top de linha da Apple que foi lançado em 2022, com um sensor de 48 megapixels
+                e suporte a Pixel Binning para melhor captura de luz em ambientes escuros. O Modo Cinemático agora pode
+                gravar vídeos em 4K@30fps e o design do entalhe está menor. O Always On Display também está presente e o
+                aparelho virá com o iOS 16.
+              </p>
+              <a href="#" class="stretched-link" title="Nome do Produto">Adicionar ao carrinho</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <image
+                  xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrHh2VtU2ZtjHso_1PlN1JRCY4Of2GcDRogJXsx9G7H5_BQQggTaqV8L2MiHDeXLkY7g&usqp=CAU"
+                  x="0"
+                  y="35"
+                  width="200"
+                  height="180"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Smart Phones</strong>
+              <h3 class="mb-0">Samsung S23</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                O Galaxy S23 é a versão convencional do top de linha da Samsung, lançado no dia 1º de fevereiro. Com um
+                preço sugerido de R$ 5.999 na versão com 128 GB e R$ 6.499 na versão com 256 GB, tem como maior destaque
+                o seu chip Snapdragon 8 Gen 2.
+              </p>
+              <a href="#" class="stretched-link" title="Nome do produto">Adicionar ao carrinho</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <image
+                  xlink:href="https://f.i.uol.com.br/fotografia/2023/02/01/167526774463da8ea03cb67_1675267744_3x2_md.jpg"
+                  x="0"
+                  y="35"
+                  width="200"
+                  height="180"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Consoles</strong>
+              <h3 class="mb-0">PlayStation 5</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                O Playstation 5 da Sony tem CPU: x86-64-AMD Ryzen Zen 8 Cores, armazenamento interno de 825GB SSD,
+                memória RAM de 16GB GDDR6/256-bit.
+              </p>
+              <a href="#" class="stretched-link" title="Nome do produto">Adicionar ao carrinho</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <image
+                  xlink:href="https://fotos.mtdesconto.com.br/ofertas/609d7f26d848b.jpg"
+                  x="0"
+                  y="35"
+                  width="200"
+                  height="180"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Consoles</strong>
+              <h3 class="mb-0">XBox Series X</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                Design do novo Xbox Series X o modelode console da ‘Microsoft’. A fabricante aposta pesado em sua nova
+                geração e traz para o ‘Xbox series X’ configurações bem avançadas em hardware. Para concluir, colocando
+                até mesmo à frente neste quesito ao seu principal concorrente, o ‘PS5’. Confira abaixo todas as
+                especificações completas do mais novo videogame da marca.
+              </p>
+              <a href="#" class="stretched-link" title="Nome do produto">Adicionar ao carrinho</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <image
+                  xlink:href="https://images-americanas.b2w.io/produtos/01/00/img/2116373/8/2116373802P1.jpg"
+                  x="0"
+                  y="35"
+                  width="200"
+                  height="180"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+      <p>
+        Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by
+        <a href="https://twitter.com/mdo">@mdo</a>.
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+    <script src="./src/App.js"></script>
+  </body>
+</html>
