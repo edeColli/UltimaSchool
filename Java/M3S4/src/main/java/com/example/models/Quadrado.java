@@ -1,3 +1,5 @@
+package com.example.models;
+
 public class Quadrado extends Retangulo {
     
   public Quadrado(String cor, double lado1) {
