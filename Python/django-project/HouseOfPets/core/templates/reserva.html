@@ -1,0 +1,18 @@
+<main>
+  {% extends 'inicio.html' %} {% block principal %}
+  <div class="text-center mt-5 pt-5">
+    <h1>Faça a reserva para dar banho no seu pet</h1>
+    <p>Fale com {{nome }} pelo telefone {{telefone }}</p>
+
+    {%if sucesso %}
+    <p class="alert alert-success">Reserva efeutada com sucesso</p>
+    {% endif %}
+
+    <form action="" method="POST">
+      {% csrf_token %} {% load bootstrap5 %} {% bootstrap_form formulario %}
+      <hr />
+      <button typpe="submit" class="btn btn-primary">Enviar Mensagem</button>
+    </form>
+  </div>
+  {% endblock %}
+</main>
