@@ -4,13 +4,13 @@
     <h1>Faça a reserva para dar banho no seu pet</h1>
     {%if sucesso %}
     <p class="alert alert-success">Reserva efeutada com sucesso</p>
-    {% endif %}
-
+    {% else %}
     <form action="" method="POST">
       {% csrf_token %} {% load bootstrap5 %} {% bootstrap_form formulario %}
       <hr />
-      <button typpe="submit" class="btn btn-primary">Enviar Mensagem</button>
+      <button typpe="submit" class="btn btn-primary">Efetuar Reserva</button>
     </form>
+    {% endif %}
   </div>
   {% endblock %}
 </main>

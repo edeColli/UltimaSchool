@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from core.forms import ContatoForm
 from core.forms import ReservaForm
+from .models import Reserva
+from .models import Contato
 
 # Create your views here.
 
@@ -23,10 +25,15 @@ def contato(request):
       form = ContatoForm(request.POST)
       if form.is_valid():
         sucesso = True
+        # contato = Contato(
+        #   nome=form.cleaned_data['nome'],
+        #   email=form.cleaned_data['email'],
+        #   mensagem=form.cleaned_data['mensagem']
+        # )
+        # contato.save()
+        form.save()
     
     context = {
-        'nome': 'Ednesio Colli',
-        'telefone': '(49) 988369338',
         'formulario': form,
         'sucesso': sucesso
     }
@@ -41,6 +48,15 @@ def reserva(request):
     else:
       form = ReservaForm(request.POST)
       if form.is_valid():
+        # schedule = Reserva(
+        #   nome=form.cleaned_data['nome'],
+        #   telefone=form.cleaned_data['telefone'],
+        #   data=form.cleaned_data['data'],
+        #   horario=form.cleaned_data['horario'],
+        #   observacao=form.cleaned_data['observacoes']
+        # )
+        # schedule.save()
+        form.save()
         sucesso = True
 
     
